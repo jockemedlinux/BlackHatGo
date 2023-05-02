@@ -1,5 +1,4 @@
 package main
-
 import (
 	"fmt"
 	"net"
@@ -17,9 +16,7 @@ func worker(ports, results chan int) {
 		conn.Close()
 		results <- p
 	}
-
 }
-
 
 func main(){
 	ports := make(chan int, 100)
