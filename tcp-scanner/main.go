@@ -1,5 +1,5 @@
 package main
-// go build -ldflags "-w -s
+// go build -ldflags "-w -s"
 import (
 	"fmt"
 	"net"

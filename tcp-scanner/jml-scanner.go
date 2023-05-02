@@ -61,7 +61,6 @@ func main(){
 	go func() {
 		for i := 1; i <= *portsPtr; i++ {
 			ports <- i
-			//time.Sleep(time.Millisecond * 50)
 		}
 	}()
 	
@@ -77,11 +76,14 @@ func main(){
 	
 	// added a check if it returns not open ports, it says so.
 	if len(openports) == 0 {
-		fmt.Println("[-] No open ports were found")
+		fmt.Println("[-] No ports found open")
+		os.Exit(0)
 	}
 
 	sort.Ints(openports)
 	for _, port := range openports {
 		fmt.Printf("[+] Port %d is open.\n", port)
 	}
+	// added a sum of total ports.
+	fmt.Printf("\n[+] A total of %d found ports open", len(openports))
 }
