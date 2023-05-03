@@ -21,3 +21,6 @@ All the nifty little things from the book BlackHatGo
     Pointers: A variable that stores the memory address of another variable. Pointers can be used to pass values by reference, to modify values indirectly, and to reduce memory usage.
 
     Defer: A statement that schedules a function call to be executed after the surrounding function returns. Defer is commonly used to clean up resources or to ensure that certain actions always occur.
+
+GOROOT is for compiler/tools that comes from go installation.
+GOPATH is for your own go projects / 3rd party libraries (downloaded with "go get").
