@@ -1,4 +1,6 @@
 # BlackHatGo
+### Disclaimer - this repository is only for educational purposes
+
 https://nostarch.com/blackhatgo
 
 All the nifty little things from the book BlackHatGo
